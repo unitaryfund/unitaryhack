@@ -1,7 +1,7 @@
 ---
 title: unitaryHACK Rules
 date: 2023-02-24
-metaDescription: Rules for the 2023 unitaryHACK event
+metaDescription: Rules for unitaryHACK
 permalink: /rules/index.html
 eleventyNavigation:
   order: 4
