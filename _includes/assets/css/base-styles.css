@@ -1,0 +1,290 @@
+/* Modified version of Sakura.css v1.3.1
+ * ================
+ * Minimal css theme.
+ * Project: https://github.com/oxalorg/sakura/
+ */
+/* Body */
+html {
+  font-size: 62.5%;
+  font-family: var(--font-family-default);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.618;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+main {
+  padding: 13px;
+}
+
+@media (max-width: 684px) {
+  body {
+    font-size: 1.53rem;
+  }
+}
+
+@media (max-width: 382px) {
+  body {
+    font-size: 1.35rem;
+  }
+}
+
+footer {
+  margin-top: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-family: var(--font-family-default);
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+h1 {
+  font-family: var(--futuristic-font);
+  font-size: var(--font-size-h1);
+  letter-spacing: 2.5px;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  margin-top: 50px;
+  margin-bottom: 28px;
+  padding: 10px 0 10px 0;
+  border-top: 2px solid var(--color-secondary);
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: var(--font-size-h3);
+}
+
+h5 {
+  font-size: var(--font-size-h3);
+}
+
+h6 {
+  font-size: var(--font-size-h3);
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  font-size: var(--font-size-p);
+  font-family: var(--font-family-default);
+}
+
+small,
+sub,
+sup {
+  font-size: 75%;
+}
+
+hr {
+  border-color: var(--color-border);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  padding: 0 4px;
+}
+
+a:hover {
+  color: var(--color-border);
+  background-color: var(--color-text);
+  border: 2px solid;
+  border-color: var(--color-border);
+  box-shadow: none;
+  
+}
+
+ul {
+  list-style-type: square;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: var(--font-size-p);
+  list-style-type: square;
+}
+
+li:not(:last-child) {
+  margin-bottom: 0.4em;
+}
+
+blockquote {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-right: 0.8em;
+  border-left: 5px solid var(--color-primary);
+  margin-bottom: 2.5rem;
+  background-color: var(--color-bg-secondary);
+}
+
+blockquote h1,
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5,
+blockquote h6 {
+  margin: 0.4em 0;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+blockquote a:hover {
+  background-color: var(--color-text);
+  box-shadow: none;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+/* Code */
+code {
+  font-size: 0.9em;
+  padding: 0 0.15em;
+  background-color: var(--color-bg-secondary);
+  white-space: pre-wrap;
+}
+
+/* Tables */
+table {
+  text-align: justify;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.2em;
+}
+
+td,
+th {
+  padding: 0.5em;
+  border-bottom: 1px solid var(--color-bg-secondary);
+  text-align: center;
+}
+
+/* Buttons, forms and input */
+input,
+textarea {
+  border: 1px solid var(--color-text);
+}
+input:focus,
+textarea:focus {
+  border: 1px solid var(--color-primary);
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 35px;
+}
+
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border-radius: 1px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.btn[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+.btn:focus:enabled,
+.btn:hover:enabled,
+button:focus:enabled,
+button:hover:enabled,
+input[type="submit"]:focus:enabled,
+input[type="submit"]:hover:enabled,
+input[type="reset"]:focus:enabled,
+input[type="reset"]:hover:enabled,
+input[type="button"]:focus:enabled,
+input[type="button"]:hover:enabled {
+  outline: 0;
+}
+
+textarea,
+select,
+input {
+  color: var(--color-text);
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  margin-bottom: 10px;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-bg-secondary);
+  border-radius: 4px;
+
+  box-sizing: border-box;
+}
+textarea:focus,
+select:focus,
+input:focus {
+  border: 1px solid var(--color-primary);
+  outline: 0;
+}
+
+input[type="checkbox"]:focus {
+  outline: 1px dotted var(--color-primary);
+}
+
+label,
+legend,
+fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.announcement {
+  background-color: var(--color-warn);
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  font-size: larger;
+}

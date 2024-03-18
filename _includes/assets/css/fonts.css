@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "FORCEDSQUARE";
+  src: url("/static/fonts/FORCEDSQUARE.ttf");
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("/static/fonts/Orbitron-VariableFont_wght.ttf");
+}

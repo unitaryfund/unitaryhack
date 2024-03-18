@@ -1,0 +1,42 @@
+:root {
+  /* Brand Colors */
+  --color-primary: #242424;
+  --color-secondary: #517c22;
+  /* Background Colors */
+  --color-bg: #ffffff;
+  --color-bg-secondary: #d7edd6;
+  --color-bg-accent: #84d280;
+  /* Text and Border Colors */
+  --color-text: #222222;
+  --color-text-title: #ffffff;
+  --color-border: #4fc648;
+  /* Status Colors */
+  --color-warn: #bef1bb;
+  /* Typography */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  /* --font-family-heading: var(--font-family-base); */
+  --futuristic-font: "Orbitron", var(--font-family-base);
+  --pixel-font: "ForcedSquare", var(--font-family-base);
+  --font-family-default: "SairaSemiCondensed-Regular", var(--font-family-base);
+  /* Font Sizes */
+  --font-size-vw: 2vw;
+  /* Desktop */
+  --font-size-title: 4rem;
+  --font-size-subtitle: 3.5rem;
+  --font-size-nav: 2.5rem;
+  --font-size-tag: 1.8rem;
+  --font-size-btn: 3rem;
+  --font-size-btndgr: 2.5rem;
+  --font-size-emoji: 3.5rem;
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h3: 2rem;
+  --font-size-p: 2rem;
+  /* Tablet */
+  --font-size-ttitle: 3.5rem;
+  --font-size-th1: 3rem;
+  /* Mobile */
+  --font-size-mtitle: 3rem;
+  --font-size-mh1: 2.5rem;
+}

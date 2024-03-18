@@ -1,0 +1,16 @@
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-family: var(--futuristic-font);
+  font-size: var(--font-size-h4);
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1024px) {
+  .site-footer {
+    padding: 15px 30px;
+  }
+}
