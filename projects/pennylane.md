@@ -2,27 +2,15 @@
 title: PennyLane
 emoji: 🧑‍🔬📚
 project_url: https://github.com/PennyLaneAI/pennylane
-metaDescription: A cross-platform Python library for differentiable programming of quantum computers.
-date: 2023-04-10
-summary: A cross-platform Python library for differentiable programming of quantum computers.
+metaDescription: PennyLane is a cross-platform Python library for quantum computing, quantum machine learning, and quantum chemistry
+date: 2024-03-27
+summary: PennyLane is a cross-platform Python library for quantum computing, quantum machine learning, and quantum chemistry
 tags:
   - python
-  - qml
-  - quantum-computing
+  - quantum machine learning
   - quantum-chemistry
 bounties:
-  - issue_num: 4088
-    value: 150
-  - issue_num: 4098
-    value: 100
-  - issue_num: 4122
-    value: 100
-  - issue_num: 4121
-    value: 75
-  - issue_num: 4055
-    value: 50
-  - issue_num: 4123
-    value: 25
+  - TBD
 ---
 
 PennyLane is a cross-platform Python library for differentiable programming of quantum computers.
