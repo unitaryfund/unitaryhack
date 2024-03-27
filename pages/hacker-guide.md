@@ -1,7 +1,7 @@
 ---
 title: Hacker Guide
 metaDescription: Helpful information for hackers participating in unitaryHACK
-date: 2023-02-24
+date: 2024-03-27
 permalink: /hacker-guide/index.html
 eleventyNavigation:
   key: Hackers
@@ -12,14 +12,14 @@ No matter your experience in quantum tech or open source communities, **you** ca
 
 ## 🗓️ Hacker Timeline 🗓️
 
-> - ASAP: [Sign up](https://airtable.com/shrKvcL9mtkuWJmg6) for unitaryHACK!
-> - ~~May 24th: unitaryHACK Q&Q event on [Discord](http://discord.unitary.fund/).~~
-> - ~~June 13th: Final day to submit your pull requests!~~
-> - ~~June 20th: Awardees finalized.~~
+> - ASAP: [Sign up](https://airtable.com/app5sTD1ailjCEft1/pag7CoNawqpRfN6Oo/form) for unitaryHACK!
+> - May TBD: unitaryHACK Q&Q event on [Discord](http://discord.unitary.fund/).
+> - June 12th: Final day to submit your pull requests!
+> - June: Awardees finalized.
 
 ## ⌚ Before the Hack ⌚
 
-[REGISTER HERE](https://airtable.com/shrKvcL9mtkuWJmg6)! You'll need to be registered in order to recieve awards.
+[REGISTER HERE](https://airtable.com/app5sTD1ailjCEft1/pag7CoNawqpRfN6Oo/form)! You'll need to be registered in order to recieve awards.
 
 ### Brush up on your open source contribution skills
 
@@ -60,7 +60,7 @@ Once you have found a [project]({{ '/projects/' | url }}) you want to work on, f
 
 Once you have a good solution to the issue, and have checked out the project's contributing guide (if they have one), you are ready to make your pull request! Check out the guides above if you are not familiar with `git` or GitHub, or if you run into issues making the contribution, just ask on the [Unitary Fund discord](http://discord.unitary.fund)!
 
-If your pull request is accepted, in order for our bots to find it you'll need the project maintainers to assign the issue to you. If it's your first time contributing to the project, you'll need to **comment on the issue** in order to be "assignable".
+If your pull request is accepted, in order for our bots to find it you'll need the project maintainers to assign the issue to you. If it's your first time contributing to the project, you'll need to **comment on the issue** in order to be "assignable". Please note that being assigned an issue does not mean that others cannot be assigned and other participants may be working on the same issue.
 
 ## 🎉 After the Hack 🎉
 
