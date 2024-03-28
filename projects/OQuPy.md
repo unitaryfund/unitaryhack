@@ -6,7 +6,7 @@ metaDescription: A Python 3 package to efficiently compute non-Markovian open qu
 date: 2024-03-28
 summary: A Python 3 package to efficiently compute non-Markovian open quantum systems.
 tags:
-  - tense networks
+  - tenser networks
 bounties:
   - TBD
 ---
