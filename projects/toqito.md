@@ -3,7 +3,7 @@ title: toqito
 emoji: 
 project_url: "https://github.com/vprusso/toqito"
 metaDescription: "|toqito> (Theory of Quantum Information Toolkit) in Python"
-date: 2023-03-31
+date: 2024-03-28
 summary: "|toqito> (Theory of Quantum Information Toolkit) in Python"
 tags:
   - python
