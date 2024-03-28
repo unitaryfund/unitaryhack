@@ -1,6 +1,6 @@
 ---
 title: toqito
-emoji: 🐍🔬
+emoji: 
 project_url: "https://github.com/vprusso/toqito"
 metaDescription: "|toqito> (Theory of Quantum Information Toolkit) in Python"
 date: 2023-03-31
@@ -12,18 +12,13 @@ tags:
   - semidefinite-programming
   - quantum-information-theory
 bounties:
-  - issue_num: 144
-    value: 100
-  - issue_num: 145
-    value: 75
-  - issue_num: 141
-    value: 75
-  - issue_num: 33
-    value: 100
-  - issue_num: 146
-    value: 100
-  - issue_num: 148
-    value: 50
+  - TBD
 ---
 
-The `toqito` package is an open source library for studying various objects in quantum information, namely, states, channels, and measurements. `toqito` focuses on providing numerical tools to study problems pertaining to entanglement theory, nonlocal games, and other aspects of quantum information that are often associated with computer science.
+(Theory of Quantum Information Toolkit)
+
+The `toqito` package is an open-source Python library for studying various objects in quantum information, namely, states, channels, and measurements.
+
+Specifically, `toqito` focuses on providing numerical tools to study problems related to entanglement theory, nonlocal games, matrix analysis, and other aspects of quantum information often associated with computer science.
+
+`toqito` aims to fill the needs of quantum information researchers who want numerical and computational tools for manipulating quantum states, measurements, and channels. It can also enhance the experience of students and instructors in classes about quantum information.
