@@ -3,29 +3,15 @@ title: KQCircuits
 emoji: 🦑
 project_url: https://github.com/iqm-finland/KQCircuits
 metaDescription: KLayout Python library for integrated quantum circuit design.
-date: 2023-04-13
+date: 2024-03-27
 summary: KLayout Python library for integrated quantum circuit design.
 tags:
   - python
   - klayout
   - eda
-  - qubits
-  - quantum-computing
-  - chip
-  - design
+  - lithography
 bounties:
-  - issue_num: 45
-    value: 150
-  - issue_num: 14
-    value: 100
-  - issue_num: 42
-    value: 100
-  - issue_num: 52
-    value: 50
-  - issue_num: 53
-    value: 50
-  - issue_num: 48
-    value: 50
+  - TBD
 ---
 
-KQCircuits is a Python library developed by IQM for automating the design of superconducting quantum circuits. It uses the KLayout layout design program API.
+KQCircuits generates multi-layer 2-dimensional-geometry representing common structures in quantum processing units (QPU). It includes definitions of parametrized geometrical objects or “elements”, framework to easily define your own elements, framework to get geometry from the elements by setting values to parameters and a framework to assemble a full QPU design by combining many of the elements in different geometrical relations. Among other templates, are also structures to combine QPU designs to create optical mask layout and EBL patterns for fabrication of quantum circuits and export a set of files for a mask as needed for QPU fabrication. KQCircuits also provides a way to export designed geometry to be simulated by third-party simulators like Ansys and Elmer.

@@ -1,7 +1,7 @@
 ---
 title: Project Maintainer Guide
 metaDescription: Helpful information for project maintainers participating in unitaryHACK
-date: 2023-03-29
+date: 2024-03-12
 permalink: /project-guide/index.html
 eleventyNavigation:
   key: Maintainers
@@ -16,14 +16,16 @@ We have some outlines below for what you can expect before and during the event,
 
 ## 🗓️ Maintainer Timeline 🗓️
 
-> - ~~**ASAP**: Maintainers from invited projects fill our participation form~~
-> - ~~**May 17th**: Maintainers party + Q&A~~
+> - **ASAP**: Maintainers from invited projects fill our participation form
+> - **May TBD**: Maintainers party + Q&A
 >   - Review of the event + rules
 >   - Answer any initial questions folks have about the event
 >   - Give a short intro about your project
-> - ~~**May 19th**: Maintainers submit bounties for finalization~~
-> - ~~**June 13th**: unitaryHACK closes~~
-> - ~~**June 20th**: Awardees finalized~~
+> - **May 10th**: Maintainers submit bounties for review
+> - **May 24th** All issues must be finalized
+> - **May 29th** unitaryHACK opens
+> - **June 12th**: unitaryHACK closes
+> - **June TBD**: Awardees finalized
 
 ## ⌚ Before the Hack ⌚
 
@@ -32,7 +34,7 @@ Get your project ready for more eyes on it! Some tips:
 - If you have a `good first issue` label, it will be a good time to review it.
 - Ensure you have `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` files at the root of your repo (or similar) so folks can learn how they should make their contributions to make your life easy.
 
-On May 1st, we will distribute a form to finalize which issues you'd like to put up for bounties, and the associated rewards associated. This year we are keeping the bounties secret until the day of the event to ensure fairness.
+In April, we will distribute a form to finalize which issues you'd like to put up for bounties, and the associated rewards associated. We will review the issues to make sure there is a good balance across the event. This year we are keeping the bounties secret until the day of the event to ensure fairness.
 
 ### How to choose good issues for participants
 
