@@ -16,16 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unitaryfund/unitaryhack2024"
+    "url": "https://github.com/unitaryfund/unitaryhack"
   },
   "author": {
-    "name": "Unitary Fund Team",
-    "email": "hack@unitary.fund",
+    "name": "Unitary Foundation Team",
+    "email": "info@unitary.foundation",
     "url": "https://unitaryhack.dev"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/unitaryfund/unitaryhack2024/issues"
+    "url": "https://github.com/unitaryfund/unitaryhack/issues"
   },
   "homepage": "http://unitaryhack.dev",
   "devDependencies": {
