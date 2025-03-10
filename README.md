@@ -1,14 +1,18 @@
-# unitaryHACK 2024!!
+# unitaryHACK 2025 incoming ☄️!
 
-Hold onto your seats, unitaryHACK is back!
-Coming to a computer near you May 29--Jun 12 2024.
+unitaryHACK is back, and coming to a computer near you **May 28&ndash;Jun 11 2025**.
+This year we'll celebrate the 5th edition of the hackathon, and we're excited to bring you the best edition yet.
+Check out the website at [`unitaryhack.dev`](https://unitaryhack.dev) for more information.
 
 Never heard of unitaryHACK before?
-Check out what happened the past three years:
+Check out previous iterations:
 
-- <a href="https://2023.unitaryhack.dev/">https://2023.unitaryhack.dev/</a>
-- <a href="https://2022.unitaryhack.dev/">https://2022.unitaryhack.dev/</a>
-- <a href="https://2021.unitaryhack.dev/">https://2021.unitaryhack.dev/</a>
+- <a href="https://2024.unitaryhack.dev/">2024.unitaryhack.dev</a>
+- <a href="https://2023.unitaryhack.dev/">2023.unitaryhack.dev</a>
+- <a href="https://2022.unitaryhack.dev/">2022.unitaryhack.dev</a>
+- <a href="https://2021.unitaryhack.dev/">2021.unitaryhack.dev</a>
+
+---
 
 ## 🚀 Website development
 
