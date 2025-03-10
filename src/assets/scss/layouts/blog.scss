@@ -1,0 +1,136 @@
+/* Article card */
+.article-card {
+  margin-top: 20px;
+  padding: 4px 6px;
+  border-radius: var(--border-radius);
+
+  &:hover {
+    color: var(--color-text);
+    background-color: var(--color-bg-hover);
+
+    :root[data-theme="dark"] & {
+      background-color: var(--color-bg-secondary-dark);
+    }
+  }
+
+  &--tags {
+    border-bottom: 2px solid var(--color-border);
+    border-radius: 0;
+
+    :root[data-theme="dark"] & {
+      border-bottom: 2px solid var(--color-border-dark);
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      :root[data-theme="dark"] & {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.article-card__link {
+  color: var(--color-text);
+
+  &:hover {
+    color: var(--color-text);
+  }
+
+  .article-card--tags & {
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
+}
+
+.article-card__title {
+  margin: 5px 0;
+}
+
+.article-card__summary {
+  margin-bottom: 0;
+  color: var(--color-text-gray);
+
+  :root[data-theme="dark"] & {
+    color: var(--color-text-dark);
+  }
+}
+
+/* Tags */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-list--no-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 0 30px;
+  border-bottom: 2px solid var(--color-border);
+
+  @media (min-width: 1024px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.tag-list__title {
+  width: 100%;
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  line-height: 1.4em;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+.tag {
+  margin: 10px 10px 0 0;
+  padding: 6px 8px;
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-secondary);
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 500;
+
+  &:hover {
+    border: none;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  :root[data-theme="dark"] & {
+    background-color: var(--color-bg-secondary-dark);
+    color: var(--color-link-dark);
+  }
+}
+
+/* Pagination */
+.pagination__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  list-style: none;
+  gap: 25px;
+}
+
+.pagination__link {
+  color: var(--color-text);
+
+  &[aria-current] {
+    color: var(--color-secondary);
+  }
+}

@@ -1,0 +1,167 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  margin: 40px 0;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  padding: 15px 25px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow);
+
+  :root[data-theme="dark"] & {
+    background-color: var(--color-bg-secondary-dark);
+  }
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+  // filter: brightness(115%);
+}
+
+.project-card__title {
+  color: var(--color-text);
+
+  :root[data-theme="dark"] & {
+    color: var(--color-title-dark);
+
+    &:hover {
+      color: var(--color-link-dark);
+      border-color: var(--color-link-dark);
+    }
+  }
+}
+
+.project-card__tag {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text);
+
+  :root[data-theme="dark"] & {
+    background-color: var(--color-bg-wrapper-bg-dark);
+    color: var(--color-text-alt);
+  }
+
+  &:hover {
+    color: var(--color-text);
+    filter: brightness(90%);
+
+    :root[data-theme="dark"] & {
+      color: var(--color-text-alt);
+      filter: brightness(90%);
+    }
+  }
+}
+
+.project-card__emoji {
+  margin-right: 8px;
+}
+
+.bounty-right {
+  float: right;
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
+.completion-emoji {
+  margin: 8px;
+  vertical-align: middle;
+  font-size: var(--font-size-emoji);
+}
+
+img[alt=Dev] {
+  width: 80px;
+}
+
+img[alt=Dev]:hover {
+  filter: brightness(120%);
+}
+
+img[alt=Stable] {
+  width: 98px;
+}
+
+img[alt=Stable]:hover {
+  filter: brightness(120%);
+}
+
+img[alt=Build-Status] {
+  width: 170px;
+}
+
+img[alt=Build-Status]:hover {
+  filter: brightness(120%);
+}
+
+img[alt=Coverage] {
+  width: 141px;
+}
+
+img[alt=Coverage]:hover {
+  filter: brightness(120%);
+}
+
+img[alt=DOI] {
+  width: 240px;
+}
+
+img[alt=DOI]:hover {
+  filter: brightness(120%);
+}
+
+// Bounty CSS
+.bounties {
+  .tag {
+    background: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-radius: 0;
+    padding: 0;
+
+    &:hover {
+      color: var(--color-secondary);
+      border-bottom: 2px solid var(--color-secondary);
+
+      :root[data-theme="dark"] & {
+        color: var(--color-link-dark);
+        border-color: var(--color-link-dark);
+      }
+    }
+  }
+}
+
+.tag.bounty-open {
+  &:hover {
+    color: #0C4CE7;
+    border-bottom: 2px solid;
+  }
+}
+
+.tag.bounty-closed {
+  color: #b3b3b3;
+
+  &:hover {
+    color: #808080;
+    border-bottom: 2px solid;
+  }
+}
+
+// Badges
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 10px;
+}

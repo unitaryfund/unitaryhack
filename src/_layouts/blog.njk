@@ -1,0 +1,20 @@
+---
+layout: base.njk
+section: blog
+permalink: /blog/index.html
+---
+<div class="page-container">
+  <h1>{{title}}</h1>
+  {{ layoutContent | safe }}
+	<hr/>
+
+  {# Article List #}
+  {% from "macros/articlelist.njk" import articlelist %}
+  {{ articlelist(
+    articles = pagination.items | reverse,
+    show_tags = true
+  ) }}
+
+  {# Pagination #}
+  {% include 'partials/pagination.njk' %}
+</div>

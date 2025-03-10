@@ -1,0 +1,106 @@
+---
+layout: base.njk
+section: home
+---
+<div class="home-page">
+	{# <div class="home-page__bg-square"></div> #}
+
+  {# Hero #}
+  <div class="hero">
+    <div class="hero__col">
+      {% image
+        home.image,
+        home.image_alt,
+        "(min-width: 1024px) 50vw, 100vw",
+        "hero__image shadow",
+        "eager"
+      %}
+    </div>
+    <div class="hero__col">
+      {# <h1 class="hero__title gradient-text">{{ home.title }}</h1> #}
+      <h1 class="hero__title">{{ home.title }}</h1>
+      {% if home.body %}
+        <div class="hero__body">{{ home.body | markdown | safe }}</div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="uhack">
+  <p><b>unitaryHACK</b> is a virtual event encouraging people to make contributions to the open source quantum ecosystem. The event will run <b>May 29-June 12, 2024</b>, and hackers have the opportunity to win cash bounties! For more information, read our <a href="https://unitaryhack.dev/hacker-guide/">hacker guide</a> and check out what happened in <a href="https://2023.unitaryhack.dev/">unitaryHACK 2023</a>. In the meantime, come hang out on <a href="https://discord.gg/unitary-fund-764231928676089909">Discord</a>!</p> 
+  <p>Make sure you register to be eligible to claim your bounties!</p>
+  </div>
+  <a href="/register" class="button-reg">Register here</a>
+  <br></br>
+
+  {# Join an in-person Hackday! #}
+<div class="list-header">
+  <h2 class="list-header__title">Join an in-person Hackday!</h2>
+</div>
+<ul style="list-style-type: square">
+  <li>
+    May 31: Aalto University CS in Helsinki starting at 18:00 for 24 hours. Pizza available!
+  </li>
+  <li>
+    May 31: Auditorio Raúl J. Marsal, Ciudad Universitaria, UNAM in Mexico City at 16 HRS UTC-6
+  <li>
+    June 11: University of Washington HUB 145 from 9 am to 5 pm, food will be available!
+  </li>
+</ul>
+<br></br>
+
+  {# Supporters #}
+   <div class="list-header">
+    <h2 class="list-header__title">Supporters</h2>
+  </div>
+  <p>Thanks so much to all the unitaryHACK supporters! 🙏</p>
+  <ul style="list-style-type: square">
+    <li>
+      <a href="https://www.nvidia.com/en-us/">NVIDIA</a>
+    </li>
+    <li>
+      <a href="https://www.qbraid.com/">QBraid</a>
+    </li>
+    <li>
+      <a href="https://www.classiq.io/">Classiq</a>
+    </li>
+    <li>
+      <a href="https://www.quera.com/">QuEra</a>
+    </li>
+    <li>
+      <a href="https://unitary.fund/">Unitary Fund</a> and its members (<b
+        >Core Members</b
+      >: <a href="https://www.ibm.com/quantum">IBM Quantum</a>, 
+      <a href="https://dorahacks.io/">DoraHacks</a>, 
+      <a href="https://openquantumdesign.org/">OQD</a>, and
+      <a href="https://www.scientifica.vc">Scientifica</a>;
+      <b>Supporting Members</b>:
+      <a href="https://aws.amazon.com/braket/">AWS</a>,
+      <a href="https://www.microsoft.com/">Microsoft</a>,
+      <a href="https://www.pasqal.com/">Pasqal</a>,
+      <a href="https://www.qcware.com/">QC Ware</a>,
+      <a href="https://www.sandboxaq.com/">SandboxAQ</a>)
+    </li>
+  </ul>
+  <br></br>
+
+
+  {# Projects #}
+  <div class="list-header">
+    <h2 class="list-header__title">Participating Projects</h2>
+    <a class="btn btn--outline btn--sm" href="/projects">View All</a>
+  </div>
+  {% from "macros/projectlist.njk" import projectlist %}
+  {{ projectlist(projects = collections.project | reverse) }}
+
+  {# Articles #}
+{#   <div class="list-header">
+    <h2 class="list-header__title">Articles</h2>
+    <a class="btn btn--outline btn--sm" href="/blog">View All</a>
+  </div>
+  {% from "macros/articlelist.njk" import articlelist %}
+  {{ articlelist(
+    articles = collections.post | reverse,
+    show_tags = false,
+    limit = 3
+  ) }}
+</div>
+ #}

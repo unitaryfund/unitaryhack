@@ -1,39 +1,53 @@
 {
-  "name": "fernfolio-11ty-template",
+  "name": "unitaryHACK",
   "version": "1.0.0",
-  "description": "The super simple portfolio template built with Eleventy and Netlify CMS",
+  "description": "open source quantum hackathon website",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "start": "cross-env npm-run-all build:sass --parallel watch:*",
+    "build": "cross-env npm-run-all build:sass build:scripts build:eleventy",
+    "watch:scripts": "esbuild \"./src/assets/js/main.js\" --target=es6 --bundle --outfile=\"./_site/assets/js/main.bundle.js\"",
+    "build:scripts": "esbuild \"./src/assets/js/main.js\" --target=es6 --bundle --minify --outfile=\"./_site/assets/js/main.bundle.js\"",
+    "watch:sass": "sass --no-source-map --watch src/assets/scss:_site/assets/css/",
+    "build:sass": "sass --no-source-map src/assets/scss/main.scss _site/assets/css/main.css",
+    "watch:eleventy": "eleventy --serve --incremental",
+    "build:eleventy": "eleventy",
+    "postbuild": "postcss _site/assets/css/*.css -u autoprefixer cssnano -r --no-map",
+    "clean": "rimraf './_site'"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unitaryfund/unitaryhack"
+    "url": "https://github.com/unitaryfund/unitaryhack2024"
   },
   "author": {
-    "name": "UF Team",
+    "name": "Unitary Fund Team",
     "email": "hack@unitary.fund",
-    "url": "https://unitary.fund"
+    "url": "https://unitaryhack.dev"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/unitaryfund/unitaryhack/issues"
+    "url": "https://github.com/unitaryfund/unitaryhack2024/issues"
   },
-  "homepage": "https://unitaryhack.dev",
+  "homepage": "http://unitaryhack.dev",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "luxon": "^1.25.0",
-    "markdown-it": "^12.3.2",
-    "markdown-it-anchor": "^5.3.0",
-    "node-fetch": "^2.6.7"
-  },
-  "dependencies": {
-    "@11ty/eleventy-navigation": "^0.3.2",
-    "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
-    "clean-css": "^4.2.1",
-    "flat-cache": "^3.0.4",
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "autoprefixer": "^10.4.8",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.12",
+    "esbuild": "^0.14.53",
     "html-minifier": "^4.0.0",
+    "luxon": "^1.25.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.6",
+    "npm-run-all": "^4.1.5",
     "path": "^0.12.7",
-    "uglify-js": "^3.17.4"
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "postcss-scss": "^4.0.4",
+    "rimraf": "^3.0.2",
+    "sass": "^1.54.3",
+    "turbolinks": "^5.2.0"
   }
 }

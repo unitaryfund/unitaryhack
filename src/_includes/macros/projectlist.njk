@@ -1,0 +1,41 @@
+{% macro projectlist(projects) %}
+  <section>
+    <div class="project-grid">
+      {% for project in projects %}
+        <div class="project-card" 
+        onclick="window.location.href='{{ project.url | url }}';"
+        style="cursor:pointer;"
+        {% if project.url == url %} data-current="current item"{% endif %}>
+       {# {% set project = post.data %}
+          {% set project_meta = gh[project.id or project.title | lower] %}
+          {% if project_meta %}  #}
+          <h4 class="project-card__title">
+              {% if project.data.emoji %}
+                <span class="project-card__emoji">{{ project.data.emoji }}</span>
+              {% endif %}
+              {% if project.data.title %}
+                {{ project.data.title }}
+              {% else %}
+                Untitled
+              {% endif %}
+          </h4>
+          {% if project.data.summary %}
+            <p>
+              {{ project.data.summary }}
+            </p>
+          {% endif %}
+          {% if project.data.tags %}
+            <p class="tag-list">
+              {% for tag in project.data.tags %}
+                {%- if tag != "project" -%}
+                  {% set tagUrl %}/project-tags/{{ tag }}/{% endset %}
+                <a class="project-card__tag tag" onclick="event.stopPropagation()" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+                {%- endif -%}
+              {% endfor %}
+            </p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endmacro %}

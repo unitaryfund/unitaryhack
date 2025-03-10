@@ -1,0 +1,36 @@
+<section class="drawer" id="drawer-name" data-drawer-target>
+  <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+  <div class="drawer__wrapper">
+    <div class="drawer__header">
+      <button class="drawer__close" data-drawer-close aria-label="Close Drawer">
+        {{ global.close_icon | svg | safe }}
+      </button>
+    </div>
+    <div class="drawer__content">
+      {% set navPages = collections.all | eleventyNavigation %}
+
+      <ul class="drawer__nav">
+        <li class="drawer__nav-item">
+          <a
+            href="/"
+            {% if "/" == page.url %} aria-current data-current="current item"{% endif %}
+          >
+            Home
+          </a>
+        </li>
+      {%- for entry in navPages %}
+        {% if entry.title != "Register" %} 
+        <li class="drawer__nav-item">
+          <a
+            href="{{ entry.url | url }}"
+            {% if entry.url == page.url %} aria-current data-current="current item"{% endif %}
+          >
+            {{ entry.title }}
+          </a>
+        </li>
+        {% endif %}
+      {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

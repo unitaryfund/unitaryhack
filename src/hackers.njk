@@ -1,0 +1,30 @@
+---
+pagination:
+  data: hackers
+  size: 1
+  alias: hacker
+permalink: "hackers/{{ hacker.username | slugify }}/"
+layout: base.njk
+---
+
+<div class="page-container">
+  <h1><code>{{ hacker.username }}</code></h1>
+  <hr>
+  <p>
+    {% if hacker.bounties | length > 1 %}
+      <code>{{ hacker.username }}</code> has claimed ${{ hacker.total_value }} by closing {{ hacker.bounties | length }} issues across {{ hacker.num_projects }} projects!
+    {% else %}
+      <code>{{ hacker.username }}</code> has claimed ${{ hacker.total_value }} by closing {{ hacker.bounties | length }} issue across {{ hacker.num_projects }} projects!
+    {% endif %}
+  </p>
+  <h2>Bounties Completed</h2>
+  <ul>
+    {% for bounty in hacker.bounties %}
+      <li><code>{{ bounty.project }}</code>: <a href={{ bounty.url }}>{% mdRender %}{{ bounty.title }}{% endmdRender %}</a></li>
+    {% endfor %}
+  </ul>
+  <br>
+  <p>
+    Check out more great work from <code>{{ hacker.username }}</code> over on their GitHub account: <a href="https://github.com/{{ hacker.username }}">https://github.com/{{ hacker.username }}</a>!
+  </p>
+</div>

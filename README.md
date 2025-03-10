@@ -1,4 +1,4 @@
-# UnitaryHACK 2024!!
+# unitaryHACK 2024!!
 
 Hold onto your seats, unitaryHACK is back!
 Coming to a computer near you May 29--Jun 12 2024.

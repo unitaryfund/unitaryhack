@@ -1,0 +1,33 @@
+{%- for project in collections.sortedProjects -%}
+  {% set project_id = project.data.id or project.data.title | lower %}
+  {% set metadata = gh[project_id] %}
+  <section>
+    <h4 class="project-bounties" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-top: 1px solid #E5E8EB; border-bottom: 1px solid #E5E8EB; padding: 8px 0px 8px 0px;">
+      <div class="emoji-name-box" style="display: flex; font-size: 0.8em;">
+        <span class="project-card__emoji">{{ project.data.emoji }} </span>
+        <a href="{{ project.url }}">{{ project.data.title }}</a>
+      </div>
+      {% if metadata.amount_available > 0 %}
+        <span class="bounty-right" style="display: flex; justify-content: right; align-items: center;">
+          <span class="completion-emoji">💰</span><b>${{ metadata.amount_available }}</b>&nbsp;up for grabs!<span class="completion-emoji">🤑</span>
+        </span>
+      {% elif metadata.total_amount > 0 and metadata.amount_available == 0 %}
+        <span class="bounty-right" style="display: flex; justify-content: right; align-items: center;">
+          <span class="completion-emoji">🥳</span>Project completed!<span class="completion-emoji">💯</span>
+        </span>
+      {% else %}
+        <span class="bounty-right" style="display: flex; justify-content: right; align-items: center;">
+          <span class="completion-emoji">⏰</span>Bounties coming soon!<span class="completion-emoji">💭</span>
+        </span>
+      {% endif %}
+
+    </h4>
+    <ul>
+      {%- for bounty in metadata.bounties -%}
+        <li>
+          <a class="tag bounty-{{ bounty.state }}" href="{{ bounty.url | url }}">${{ bounty.value }} | {% mdRender %}{{ bounty.title }}{% endmdRender %}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+{%- endfor -%}

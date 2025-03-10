@@ -1,0 +1,127 @@
+.home-page {
+  max-width: var(--site-width);
+  margin: 0 auto 60px;
+  padding: 0 20px 20px;
+
+  @media (min-width: 1024px) {
+    padding: 20px 40px;
+  }
+}
+
+.home-page__bg-square {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+    position: absolute;
+    left: auto;
+    top: 95px;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+    max-height: 60%;
+    max-width: 35%;
+    min-width: 300px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-accent);
+    z-index: -1;
+
+    :root[data-theme="dark"] & {
+      background-color: var(--color-bg-accent-dark);
+    }
+  }
+}
+
+.hero {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 0;
+  max-width: 1100px;
+  margin: 30px auto;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 3fr 3fr;
+    row-gap: 20px;
+    margin: 50px auto;
+    background-image: url("../img/hero.gif");
+    background-size: 100%;
+  }
+}
+
+.hero__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__image {
+  max-width: 300px;
+  border-radius: var(--border-radius);
+  transition: filter 0.4s ease-out;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+.hero__title {
+  @media (min-width: 1024px) {
+    margin-top: 0;
+    font-size: 3em;
+  }
+}
+
+.hero__body {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 2px solid (var(--color-border));
+
+  :root[data-theme="dark"] & {
+    border-top: 1px solid (var(--color-border-dark));
+  }
+}
+
+.list-header__title {
+  margin: 0;
+}
+
+.uhack {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.button-reg {
+  background-color: #ffff00;
+  border-radius: 12px;
+  color: black;
+  font-size: smaller;
+  font-weight: 600;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+
+  &:hover {
+    background-color: black;
+    color: #ffff00;
+    border: none;
+  }
+}

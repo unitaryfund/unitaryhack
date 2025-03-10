@@ -1,5 +1,6 @@
 _site/
 node_modules/
 package-lock.json
-_data/emails
-_data/signups.csv
+
+src/_data/emails
+src/_data/signups.csv

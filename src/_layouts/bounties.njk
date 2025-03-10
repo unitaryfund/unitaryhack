@@ -1,0 +1,23 @@
+---
+layout: base.njk
+section: projects
+---
+<div class="page-container">
+  <h1>{{title}}</h1>
+  <hr>
+  {% if subtitle %}
+    <p>{{ subtitle }}</p>
+  {% endif %}
+
+  <p>
+    To date, <b>{{ stats["num_bounties"] - stats["num_open_bounties"] }} bounties</b>
+    have been closed, and <b>${{ stats["total_bounty_value"] - stats["open_bounty_value"] }}</b>
+    earned!
+    Congratulations 🎉 to the {{ stats["num_hackers"] }} hackers who have been been awarded bounties thus far.
+    There are still {{ stats["num_open_bounties"] }} bounties up for grabs, worth a total of ${{ stats["open_bounty_value"] }}!
+  </p>
+
+  {{ layoutContent | safe }}
+
+  {% include "partials/bountylist.njk" %}
+</div>

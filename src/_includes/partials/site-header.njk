@@ -1,0 +1,48 @@
+{# Site banner #}
+<span class="announcement">
+  ⚡ Check out what's happening with the latest installment of unitaryHACK at <a href="https://unitaryhack.dev/">unitaryhack.dev</a>. ⚡
+</span>
+<header class="site-header">
+  <div class="site-header__container">
+    <span class="site-header__logo-container">
+      <a class="site-header__logo" href="{{ '/' | url }}" aria-label="Logo">
+        {{ global.logo | svg | safe }}
+      </a>
+    </span>
+    <button
+      class="site-header__mobile-nav"
+      data-drawer-trigger=""
+      aria-controls="drawer-name"
+      aria-expanded="false"
+    >
+      <span class="site-header__mobile-nav-label">Menu</span>
+      {{ global.menu_icon | svg | safe }}
+    </button>
+    <nav class="site-header__nav">
+      {% set navPages = collections.all | eleventyNavigation %}
+      <ul class="site-header__items">
+        {%- for entry in navPages %}
+          {% if entry.title != "Register" %} 
+          <li class="site-header__item">
+            <a
+              class="site-header__link"
+              href="{{ entry.url | url }}"
+              {% if entry.url == page.url %} aria-current data-current="current item"{% endif %}
+            >
+              {{ entry.title }}
+            </a>
+          </li>
+          {% endif %}
+        {%- endfor %}
+
+        {# {% if global.enable_theme_switch %}
+          <li class="site-header__item">
+            <button class="site-header__link site-header__link--theme-switch" data-theme-switch>
+              {{ global.switch_theme_icon | svg | safe }}
+            </button> 
+          </li>
+        {% endif %}#}
+      </ul>
+    </nav>
+  </div>
+</header>

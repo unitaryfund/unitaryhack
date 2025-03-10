@@ -1,0 +1,25 @@
+---
+layout: base.njk
+section: leaderboard
+---
+<div class="page-container">
+  <h1>{{ title }}</h1>
+  <hr>
+  <p>
+    <b>{{ stats.num_hackers }}</b> hackers have combined to earn <b>${{ stats["total_bounty_value"] - stats["open_bounty_value"] }}</b>
+    by closing <b>{{ stats["num_bounties"] - stats["num_open_bounties"] }}</b> bounties!
+  </p>
+
+  <table>
+    <tr>
+      <th>Hacker</th>
+      <th>Bounties Completed</th>
+    </tr>
+    {% for hacker, num_bounties in leaderboard %}
+      <tr>
+        <td><a href="/hackers/{{ hacker | lower }}">{{ hacker }}</a></td>
+        <td>{{ num_bounties }}</td>
+      </tr>
+    {% endfor %}
+  </table> 
+</div>
