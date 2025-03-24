@@ -27,7 +27,7 @@ If you have any questions about the event contact us hack@unitary.foundation, or
 
 ---
 
-# Hacker Guide (from [website](https://unitaryhack.dev/hacker-guide/))
+# [Hacker Guide](https://unitaryhack.dev/hacker-guide/)
 
 No matter your experience in quantum tech or open source communities, you can help make quantum open source better (and get PAID!). This guide will help you understand more about the event and how you can make the most of it!
 
