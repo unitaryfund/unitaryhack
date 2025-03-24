@@ -7,4 +7,4 @@ eleventyNavigation:
   order: 1
 ---
 
-<iframe class="airtable-embed" src="https://airtable.com/embed/app5sTD1ailjCEft1/pag7CoNawqpRfN6Oo/form" loading="lazy" frameBorder="0" onmousewheel="" width="100%" height="1500"></iframe>
+<iframe class="airtable-embed" src="https://airtable.com/embed/apppeZIiaDZ7dgNya/pag7CoNawqpRfN6Oo/form" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>

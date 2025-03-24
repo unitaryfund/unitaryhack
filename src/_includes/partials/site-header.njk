@@ -1,7 +1,4 @@
 {# Site banner #}
-<span class="announcement">
-  ⚡ Check out what's happening with the latest installment of unitaryHACK at <a href="https://unitaryhack.dev/">unitaryhack.dev</a>. ⚡
-</span>
 <header class="site-header">
   <div class="site-header__container">
     <span class="site-header__logo-container">
@@ -22,7 +19,7 @@
       {% set navPages = collections.all | eleventyNavigation %}
       <ul class="site-header__items">
         {%- for entry in navPages %}
-          {% if entry.title == "Registration" or entry.title == "Rules" or entry.title == "Maintainers" %}
+          {% if entry.title == "Registration" or entry.title == "Hackers" or entry.title == "Rules" or entry.title == "Maintainers" %}
           <li class="site-header__item">
             <a
               class="site-header__link"

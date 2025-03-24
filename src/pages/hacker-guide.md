@@ -1,7 +1,7 @@
 ---
 title: Hacker Guide
 metaDescription: Helpful information for hackers participating in unitaryHACK
-date: 2024-03-27
+date: 2025-03-24
 permalink: /hacker-guide/index.html
 eleventyNavigation:
   key: Hackers
