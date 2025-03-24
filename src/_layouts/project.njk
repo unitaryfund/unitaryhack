@@ -12,29 +12,8 @@ section: project
 
   {{ layoutContent | safe }}
 
- <hr/>
+  <div class="hr"></div>
 
-{% set bounties = gh[id or title | lower].bounties %}
-  {% if bounties %}
-    {% for state, bts in bounties | groupby("state") | dictsort | reverse %}
-      <h5>{{ state | capitalize }} bounties:</h5>
-      <ul class="bounties">
-        {% for bounty in bts %}
-        {% set comma = joiner(", ") %}
-          <li>
-            <a class="tag bounty-{{ state }}" href="{{ bounty.url | url }}">${{ bounty.value }} | {% mdRender %}{{ bounty.title }}{% endmdRender %}</a>
-            {% if state == "closed" and bounty.assignees.length != 0 %}
-              <br>
-              closed by:
-              {% for hacker in bounty.assignees -%}
-                {{ comma() }}<a href="https://github.com/{{ hacker }}">{{ hacker }}</a>
-              {%- endfor %}
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    {% endfor %}
-  {% endif %}
   <nav>
     <a href="{{ '/projects/' | url }}">← View All Projects</a>
   </nav>
