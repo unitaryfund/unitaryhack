@@ -48,64 +48,6 @@ section: home
   </li>
 </ul>
 </div>
-<br></br>
 
-  {# Supporters #}
-  <div class="uhack">
-   <div class="list-header">
-    <h2 class="list-header__title">Supporters</h2>
-  </div>
-  <p>Thanks so much to all the unitaryHACK supporters! 🙏</p>
-  <ul style="list-style-type: square">
-    <li>
-      <a href="https://www.nvidia.com/en-us/">NVIDIA</a>
-    </li>
-    <li>
-      <a href="https://www.qbraid.com/">QBraid</a>
-    </li>
-    <li>
-      <a href="https://www.classiq.io/">Classiq</a>
-    </li>
-    <li>
-      <a href="https://www.quera.com/">QuEra</a>
-    </li>
-    <li>
-      <a href="https://unitary.fund/">Unitary Fund</a> and its members (<b
-        >Core Members</b
-      >: <a href="https://www.ibm.com/quantum">IBM Quantum</a>, 
-      <a href="https://dorahacks.io/">DoraHacks</a>, 
-      <a href="https://openquantumdesign.org/">OQD</a>, and
-      <a href="https://www.scientifica.vc">Scientifica</a>;
-      <b>Supporting Members</b>:
-      <a href="https://aws.amazon.com/braket/">AWS</a>,
-      <a href="https://www.microsoft.com/">Microsoft</a>,
-      <a href="https://www.pasqal.com/">Pasqal</a>,
-      <a href="https://www.qcware.com/">QC Ware</a>,
-      <a href="https://www.sandboxaq.com/">SandboxAQ</a>)
-    </li>
-  </ul>
-  </div>
-  <br></br>
-
-
-  {# Projects #}
-  <div class="list-header">
-    <h2 class="list-header__title">Participating Projects</h2>
-    <a class="btn btn--outline btn--sm" href="/projects">View All</a>
-  </div>
-  {% from "macros/projectlist.njk" import projectlist %}
-  {{ projectlist(projects = collections.project | reverse) }}
-
-  {# Articles #}
-{#   <div class="list-header">
-    <h2 class="list-header__title">Articles</h2>
-    <a class="btn btn--outline btn--sm" href="/blog">View All</a>
-  </div>
-  {% from "macros/articlelist.njk" import articlelist %}
-  {{ articlelist(
-    articles = collections.post | reverse,
-    show_tags = false,
-    limit = 3
-  ) }}
 </div>
  #}
