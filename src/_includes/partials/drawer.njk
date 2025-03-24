@@ -19,7 +19,7 @@
           </a>
         </li>
       {%- for entry in navPages %}
-        {% if entry.title != "Register" %} 
+        {% if entry.title == "Register" or entry.title == "Rules" or entry.title == "Maintainers" %} 
         <li class="drawer__nav-item">
           <a
             href="{{ entry.url | url }}"

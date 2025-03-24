@@ -1,9 +1,9 @@
 ---
-title: Register
+title: Registration
 metaDescription: Register for unitaryHACK!
 permalink: /register/index.html
 eleventyNavigation:
-  key: Register
+  key: Registration
   order: 1
 ---
 
