@@ -7,14 +7,18 @@ pagination:
   filter:
     - project
 ---
-<div class="page-container">
-  <h1>{{title}}</h1>
+<div class="page-margin">
+  <div class="project-container">
 
-  {% if subtitle %}
-    <p>{{ subtitle }}</p>
-  {% endif %}
+    <h1>{{title}}</h1>
 
-  <hr/>
+    {% if subtitle %}
+      <p>{{ subtitle }}</p>
+    {% endif %}
+
+    <div class="hr"></div>
+
+  </div>
 
   {{ layoutContent | safe }}
 

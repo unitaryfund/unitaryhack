@@ -2,7 +2,10 @@
   max-width: var(--site-width);
   margin-right: auto;
   margin-left: auto;
-  padding: 1rem;
+  background-color: var(--color-bg-container);
+  border-style: solid;
+  border-color: var(--color-border-dark);
+  padding: 24px;
 
   img {
     display: flex;
@@ -10,6 +13,12 @@
     max-width: 700px;
     // margin: 4rem auto;
   }
+}
+
+.page-margin {
+  max-width: var(--site-width);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .shadow {

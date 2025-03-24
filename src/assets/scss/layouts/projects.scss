@@ -9,15 +9,36 @@
   }
 }
 
+.project-container {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  padding: 15px 25px;
+  border-style: solid;
+  border-color: var(--color-border-dark);
+  background-color: var(--color-bg-container);
+  box-shadow: var(--shadow);
+
+  :root[data-theme="dark"] & {
+    background-color: var(--color-bg-secondary-dark);
+  }
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+  // filter: brightness(115%);
+}
+
 .project-card {
   display: block;
   display: flex;
   flex-direction: column;
   justify-content: top;
   padding: 15px 25px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius);
-  background-color: var(--color-bg);
+  border-style: solid;
+  border-color: var(--color-border-dark);
+  background-color: var(--color-bg-container);
   box-shadow: var(--shadow);
 
   :root[data-theme="dark"] & {
@@ -122,7 +143,6 @@ img[alt=DOI]:hover {
 // Bounty CSS
 .bounties {
   .tag {
-    background: white;
     font-size: 1.8rem;
     font-weight: 400;
     border-radius: 0;
@@ -164,4 +184,13 @@ img[alt=DOI]:hover {
 
 .badge {
   padding: 10px;
+}
+
+.hr {
+  border:solid 1px var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-primary);
+  width: 96%;
+  height: 1px;
+  margin-bottom: 4px;
 }

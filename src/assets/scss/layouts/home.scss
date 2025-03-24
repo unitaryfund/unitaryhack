@@ -40,13 +40,12 @@
   column-gap: 0;
   max-width: 1100px;
   margin: 30px auto;
+  padding: 0px 50px 50px;
 
   @media (min-width: 1024px) {
     grid-template-columns: 3fr 3fr;
     row-gap: 20px;
     margin: 50px auto;
-    background-image: url("../img/hero.gif");
-    background-size: 100%;
   }
 }
 
@@ -70,6 +69,8 @@
   @media (min-width: 1024px) {
     margin-top: 0;
     font-size: 3em;
+    color: var(--color-bg-secondary);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
 }
 
@@ -90,7 +91,6 @@
   gap: 20px;
   margin-bottom: 20px;
   padding-top: 20px;
-  border-top: 2px solid (var(--color-border));
 
   :root[data-theme="dark"] & {
     border-top: 1px solid (var(--color-border-dark));
@@ -105,11 +105,17 @@
   display: flex;
   flex-direction: column;
   align-items: left;
+  background-color: var(--color-bg-container);
+  border-style: solid;
+  border-color: var(--color-border-dark);
+  padding: 24px;
 }
 
 .button-reg {
-  background-color: #ffff00;
-  border-radius: 12px;
+  background-color: #FAD85E;
+  border-radius: 24px;
+  border-style: solid;
+  border-color: var(--color-border-dark);
   color: black;
   font-size: smaller;
   font-weight: 600;
@@ -118,10 +124,11 @@
   text-decoration: none;
   display: inline-block;
   align-items: center;
+  width: fit-content;
 
   &:hover {
     background-color: black;
-    color: #ffff00;
-    border: none;
+    color: #FAD85E;
+    padding: 8px 20px 9px;
   }
 }
