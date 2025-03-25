@@ -91,7 +91,7 @@ Logistically, these are the steps a maintainer will take during the hackathon.
 
 ### How much activity should we expect to see?
 
-In previous years we've seen some projects garner more attention, and some less. Generally, the more time you've taken to carefully select, scope, and detail issues to be put up for bounty, the more attention you should expect your project to see. Check out last years [results](https://2022.unitaryhack.dev/results/) to get a more detailed sense.
+In previous years we've seen some projects garner more attention, and some less. Generally, the more time you've taken to carefully select, scope, and detail issues to be put up for bounty, the more attention you should expect your project to see. Check out last year's [results](https://2024.unitaryhack.dev/bounties/) to get a more detailed sense.
 
 ### What should I do if I have questions or need support? 
 
