@@ -33,6 +33,13 @@
   }
 }
 
+.overlay{
+  position: absolute;
+  max-width: var(--site-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .hero {
   display: grid;
   grid-auto-columns: 1fr;
