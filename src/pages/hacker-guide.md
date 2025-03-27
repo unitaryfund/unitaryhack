@@ -14,7 +14,7 @@ No matter your experience in quantum tech or open source communities, you can he
 ## 🗓️ Hacker Timeline 🗓️
 
 > - **ASAP**: Sign up for unitaryHACK!
-> - **May 21st**: unitaryHACK Q&A event on [Discord](http://discord.unitary.fund/) at 9:30 am Pacific Time.
+> - **May 21st**: unitaryHACK Q&A event on [Discord](http://discord.unitary.foundation/) at 9:30 am Pacific Time.
 > - **June 11th 5pm AoE**: Deadline to submit pull requests.
 > - **June 20th**: Awardees finalized and contacted.
 
@@ -53,7 +53,7 @@ Whether you are new to quantum technologies or work on them every day, here is a
 
 ### Join the discord
 
-The main place that will be most helpful to you while you hack is connecting with other hackers and maintainers on the [Unitary Foundation Discord](http://discord.unitary.fund/). You can find folks from the Unitary Foundation to ask about rules, as well as maintainers of the participating projects, and other hackers who might be able to lend a hand or team up (totally encouraged)!
+The main place that will be most helpful to you while you hack is connecting with other hackers and maintainers on the [Unitary Foundation Discord](http://discord.unitary.foundation/). You can find folks from the Unitary Foundation to ask about rules, as well as maintainers of the participating projects, and other hackers who might be able to lend a hand or team up (totally encouraged)!
 
 
 ### Find a task to dive into
@@ -65,7 +65,7 @@ If you want to team up with other hackers on an issue that you have found, you c
 
 ### Make a pull request
 
-Once you have a good solution to the issue, and have checked out the project's contributing guide (if they have one), you are ready to make your pull request! Check out the guides above if you are not familiar with `git` or GitHub, or if you run into issues making the contribution, just ask on the [Unitary Foundation discord](http://discord.unitary.fund/)!
+Once you have a good solution to the issue, and have checked out the project's contributing guide (if they have one), you are ready to make your pull request! Check out the guides above if you are not familiar with `git` or GitHub, or if you run into issues making the contribution, just ask on the [Unitary Foundation discord](http://discord.unitary.foundation/)!
 
 We ask that you not create more than 4 pull requests at one time. This is to ensure that you are not overwhelming yourself, that other hackers are getting a chance to contribute, and that our maintainers are not inundated with PRs that aren’t fully complete. 
 

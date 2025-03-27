@@ -21,6 +21,6 @@ A contribution to a participating project for this hackathon consists of making 
 
 Any submissions made after 5pm AoE on June 11th will not be considered, unless a special exception is made in advance by the Unitary Foundation team.  
 
-All participants and maintainers must adhere to the project's Code of Conduct as well as Unitary Foundation's [Community Code of Conduct](https://github.com/unitaryfund/unitary.fund/blob/master/CODE_OF_CONDUCT.md).
+All participants and maintainers must adhere to the project's Code of Conduct as well as Unitary Foundation's [Community Code of Conduct](https://github.com/unitaryfund/unitary.foundation/blob/master/CODE_OF_CONDUCT.md).
 
 If you have any questions about the event contact us hack@unitary.foundation, or to get in touch with others working on the event, join our [Discord](https://discord.gg/2Y9z9xKKbr)!
